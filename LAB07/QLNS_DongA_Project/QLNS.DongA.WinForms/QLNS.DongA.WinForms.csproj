@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.props" Condition="Exists('$(MSBuildToolsPath)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A58BD51C-2B43-491D-8C12-A4D5410DAB55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLNS.DongA</RootNamespace>
+    <AssemblyName>QLNS.DongA.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Data\ConnectionFactory.cs" />
+    <Compile Include="Data\TableCatalog.cs" />
+    <Compile Include="Data\GenericDataRepository.cs" />
+    <Compile Include="Data\LookupRepository.cs" />
+    <Compile Include="Data\RecruitmentRepository.cs" />
+    <Compile Include="Data\AwardRepository.cs" />
+    <Compile Include="Data\PayrollRepository.cs" />
+    <Compile Include="Services\GenericTableService.cs" />
+    <Compile Include="Services\RecruitmentService.cs" />
+    <Compile Include="Services\AwardService.cs" />
+    <Compile Include="Services\PayrollService.cs" />
+    <Compile Include="UI\MainForm.cs" />
+    <Compile Include="UI\GenericTableForm.cs" />
+    <Compile Include="UI\RecruitmentWorkflowForm.cs" />
+    <Compile Include="UI\AwardForm.cs" />
+    <Compile Include="UI\PayrollForm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
