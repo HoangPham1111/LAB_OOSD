@@ -20,3 +20,5 @@ Bước 2: Truy cập website https://app.diagrams.net/.
 Bước 3: bật folder vừa tải 
 
 Bước 4: kéo thả vào website
+<img width="1252" height="920" alt="image" src="https://github.com/user-attachments/assets/d76840d7-de77-482b-9f87-3d4005df8218" />
+
