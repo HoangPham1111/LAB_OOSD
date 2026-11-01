@@ -10,8 +10,13 @@ Bước 4: Chọn Open Existing Diagram (Mở sơ đồ có sẵn).
 Bước 5: Chọn file có phần mở rộng .drawio đã tải về từ GitHub.
 
 Bước 6: Nhấn Open (Mở) để hiển thị sơ đồ.
+
 Cách 2
+
 Bước 1: tải toàn bộ folder
+
 Bước 2: Truy cập website https://app.diagrams.net/.
+
 Bước 3: bật folder vừa tải 
+
 Bước 4: kéo thả vào website
